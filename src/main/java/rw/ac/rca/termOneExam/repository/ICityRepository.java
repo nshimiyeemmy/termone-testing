@@ -10,4 +10,7 @@ public interface ICityRepository extends JpaRepository<City, Long> {
 
 	boolean existsByName(String name);
 
+	int weatherGreaterThan(double weather);
+
+	int weatherLessThan(double weather);
 }
